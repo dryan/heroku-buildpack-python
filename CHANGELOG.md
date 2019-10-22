@@ -9,7 +9,7 @@
 - Correct ftp to https in vendored file
 - Warn for Django 1.11 approaching EOL, provide link to roadmap
 
---------------------------------------------------------------------------------
+---
 
 # 165 (2020-02-27)
 
@@ -273,15 +273,15 @@ Bugfix for C dependency installation.
 
 # 106
 
- Don't install packages that could mess up packaging.
+Don't install packages that could mess up packaging.
 
- - The Python buildpack will automatically remove `six`, `pyparsing`, `appdirs`,
-   `setuptools`, and `distribute` from a `requirements.txt` file now, as these
-   packages are provided by the Python buildpack.
+- The Python buildpack will automatically remove `six`, `pyparsing`, `appdirs`,
+  `setuptools`, and `distribute` from a `requirements.txt` file now, as these
+  packages are provided by the Python buildpack.
 
- # 105
+# 105
 
- Improvements to output messaging.
+Improvements to output messaging.
 
 # 104
 
@@ -498,7 +498,6 @@ Updated Pip and Setuptools.
 
 - Setuptools updated to v18.3.2
 - Pip updated to v7.1.2
-
 
 ## v62 (2015-08-07)
 
