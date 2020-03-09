@@ -19,7 +19,7 @@
 # 166 (2020-03-05)
 
 - Correct ftp to https in vendored file
-- Warn for Django 1.11 approaching EOL, provide link to roadmap
+- Warn for Django 1.11 approaching EOL, provide link to roadmap [fixed detection]
 
 # 165 (2020-02-27)
 
