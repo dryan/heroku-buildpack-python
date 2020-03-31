@@ -259,6 +259,10 @@ mtime "python.install.time" "${start}"
 # shellcheck source=bin/steps/pipenv
 source "$BIN_DIR/steps/pipenv"
 
+# Install poetry dependencies, if a poetry.lock was provided.
+# shellcheck source=bin/steps/pipenv
+source "$BIN_DIR/steps/poetry"
+
 # If no requirements.txt file given, assume `setup.py develop` is intended.
 # This allows for people to ship a setup.py application to Heroku
 
