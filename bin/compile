@@ -85,7 +85,7 @@ if [[ -f "$BUILD_DIR/Pipfile" ]]; then
 fi
 
 export DEFAULT_PYTHON_STACK PIP_UPDATE
-export PY37 PY36 PY35 PY27 PY34
+export PY38 PY37 PY36 PY35 PY27 PY34
 
 # Common Problem Warnings:
 # This section creates a temporary file in which to stick the output of `pip install`.
