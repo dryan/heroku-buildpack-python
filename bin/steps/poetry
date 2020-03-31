@@ -66,6 +66,8 @@ if [ ! "$SKIP_POETRY_INSTALL" ]; then
           ln -s $HOME/.poetry/bin/poetry /app/.heroku/python/bin/poetry
         fi
 
+        # tell poetry to not create new virtual environments
+        /app/.heroku/python/bin/poetry config virtualenvs.create false
 
         # Install the test dependencies, for CI.
         if [ "$INSTALL_TEST" ]; then
