@@ -3,6 +3,7 @@
 # Master
 
 - update Code Owners to include the Heroku Buildpack Maintainers team
+- Deprecation warning: BUILD_WITH_GEO_LIBRARIES is now deprecated. See warning for details.
 
 - Add failcase for cache busting
 - Bugfix: Clearing pip dependencies
