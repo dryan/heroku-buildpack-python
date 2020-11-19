@@ -82,7 +82,6 @@ if [ ! "$SKIP_POETRY_INSTALL" ]; then
 
         else
             poetry export -f requirements.txt > requirements.txt
-            "$BIN_DIR/steps/pip-uninstall"
             cp requirements.txt .heroku/python/requirements-declared.txt
             openssl dgst -sha256 poetry.lock > .heroku/python/poetry.lock.sha256
 
