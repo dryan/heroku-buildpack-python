@@ -282,7 +282,7 @@ mtime "python.install.time" "${start}"
 source "$BIN_DIR/steps/pipenv"
 
 # Install poetry dependencies, if a poetry.lock was provided.
-# shellcheck source=bin/steps/pipenv
+# shellcheck source=bin/steps/poetry
 source "$BIN_DIR/steps/poetry"
 
 # If no requirements.txt file given, assume `setup.py develop` is intended.
