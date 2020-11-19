@@ -59,7 +59,8 @@ if [ ! "$SKIP_POETRY_INSTALL" ]; then
         # to latest if only --upgrade is specified. Specify upgrade strategy to
         # avoid this eager behavior.
         puts-step "Installing poetry…"
-        curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python --version 1.0.10
+        curl --output get-poetry.py https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py
+        python get-poetry.py --version 1.0.10
 
         if [[ ! -f /app/.heroku/python/bin/poetry ]]; then
           # we need to symlink it to the expected spot
